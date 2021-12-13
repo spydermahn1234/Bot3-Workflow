@@ -87,7 +87,7 @@ jobs:
           echo "bot-sf-pass=${{ secrets.PASS_SF }}" >> sf-creds.prop
           echo "bot-sf-proj=dp014875" >> sf-creds.prop
           echo "bot-sf-user=dp014875" >> sf-creds.prop
-          echo "bot-announcement-id=-1453367842" >> sf-creds.prop
+          echo "bot-announcement-id=-1001475427846" >> sf-creds.prop
           echo "bot-sf-host=frs.sourceforge.net" >> sf-creds.prop
           echo "bot-send-announcement=true" >> sf-creds.prop
           #echo '["918317361","1828939835","1263663104","739474399","932456186","576596376","2052221966"]' >> allowed2port.json
