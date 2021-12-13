@@ -104,7 +104,7 @@ jobs:
         run: |
           sudo apt install openjdk-8-jdk -y >> /dev/null 2>&1
           cd Bot3/build/libs
-          git clone --recurse-submodules https://github.com/dp0148475/ErfanGSIs-1 ErfanGSIs
+          git clone --recurse-submodules https://github.com/dp014875/ErfanGSIs-PriiiiyoGSIs ErfanGSIs
           pip3 install wheel setuptools
           pip3 install backports.lzma docopt zstandard bsdiff4 protobuf pycrypto
           sudo pip3 install --upgrade protobuf
