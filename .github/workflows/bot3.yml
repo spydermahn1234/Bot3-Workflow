@@ -82,8 +82,8 @@ jobs:
           echo "bot-username=dipesh_gsi_bot" >> configs.prop
           echo "bot-master=1823032615" >> configs.prop
           echo "privateChat=-1001475427846" >> configs.prop
-          echo "requestChat=-1453367842,-1001475427846" >> configs.prop
-          echo "publicChannel=dt_tech_updates" >> configs.prop
+          echo "requestChat=-1001475427846,-1001475427846" >> configs.prop
+          echo "publicChannel=dt_tech" >> configs.prop
           echo "bot-sf-pass=${{ secrets.PASS_SF }}" >> sf-creds.prop
           echo "bot-sf-proj=dp014875" >> sf-creds.prop
           echo "bot-sf-user=dp014875" >> sf-creds.prop
