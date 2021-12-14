@@ -73,8 +73,10 @@ jobs:
         env:
            JAVA_HOME: /usr/oracle/java/graalvm-ce-java16-21.2.0
         run: |
-           git clone https://github.com/dp014875/Bot3-6
-           cd Bot3 && ./gradlew shadowJar; cd build/libs
+           git clone -b main https://github.com/dp0148475/Bot3 Bot3; cd Bot3
+           ./gradlew shadowJar
+           cd ../; mv Bot/build/libs/*.jar BoboBot.jar
+           rm -rf Bot
            mkdir configs && cd configs
            touch configs.prop
            touch allowed2port.json
