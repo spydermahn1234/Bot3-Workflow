@@ -114,7 +114,9 @@ jobs:
         timeout-minutes: 315
         run: |
              cd Bot3/build/libs
-             git clone --recurse-submodules https://github.com/dp014875/SGSI-build-tool
+             git clone --recurse-submodules https://github.com/dp014875/SGSI-build-tool xiaoxindada
+             sudo chmod -R 0777 xiaoxindada
+             sudo bash xiaoxindada/setup.sh 
 
       - name: Run the Bot³+t
         continue-on-error: true
