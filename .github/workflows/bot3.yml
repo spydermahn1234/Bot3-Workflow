@@ -109,11 +109,12 @@ jobs:
           pip3 install backports.lzma docopt zstandard bsdiff4 protobuf pycrypto
           sudo pip3 install --upgrade protobuf
 
-      - name: Update
+      - name: Setup Xiaxoinda tool
         continue-on-error: true
         timeout-minutes: 315
         run: |
-             bash ErfanGSIs/update.sh
+             cd Bot3/build/libs
+             git clone --recurse-submodules https://github.com/dp014875/SGSI-build-tool
 
       - name: Run the Bot³+t
         continue-on-error: true
