@@ -72,8 +72,9 @@ jobs:
       - name: Clone, Compile & Setup Bot³+t
         env:
           JAVA_HOME: /usr/oracle/java/graalvm-ce-java16-21.2.0
+        run: -ce-java16-21.2.0
         run: |
-          git clone https://github.com/dp014875/Bot3-6 Bot3
+          git clone https://github.com/dp014875/Bot3-6
           cd Bot3 && ./gradlew shadowJar; cd build/libs
           mkdir configs && cd configs
           touch configs.prop
